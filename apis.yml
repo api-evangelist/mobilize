@@ -1,8 +1,27 @@
 aid: mobilize
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mobilize.png
 name: Mobilize
-description: 'Mobilize is a company surfaced as a portfolio company of trinity-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: saas. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Mobilize (mobilize.io) is a community and learning software platform purpose-built
+  for associations and professional networks, now operating under the Forj brand (forj.ai).
+  The platform unifies member community and continuing education in one place through its
+  products Forj Connect (peer-to-peer and group member communication), Forj Learn (a learning
+  management system for continuing education, certification, and social learning), and Journey
+  by Forj (a combined community-and-learning experience). Mobilize was surfaced as a portfolio
+  company of Trinity Ventures. As of this enrichment pass the company publishes a member/admin
+  web application (app.mobilize.io) and a Zendesk help center but no public developer API,
+  OpenAPI specification, or developer portal, so this profile carries verified company identity
+  and link properties rather than API artifacts.'
 url: https://raw.githubusercontent.com/api-evangelist/mobilize/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +31,46 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-- Saas
+- SaaS
+- Community
+- Learning
+- Associations
+- Membership
+- LMS
+- Member Engagement
+- Professional Networks
 apis: []
+common:
+- type: DomainSecurity
+  url: security/mobilize-domain-security.yml
+- type: Website
+  url: https://www.forj.ai
+- type: About
+  url: https://www.forj.ai/about
+- type: Login
+  url: https://app.mobilize.io
+- type: Support
+  url: https://support.mobilize.io/hc/en-us
+- type: Blog
+  url: https://www.forj.ai/resources
+- type: GitHubOrganization
+  url: https://github.com/mobilizeio
+- type: TermsOfService
+  url: https://www.forj.ai/mobilize-terms-of-service
+- type: PrivacyPolicy
+  url: https://www.forj.ai/privacy-policy
+- type: Integrations
+  url: https://www.forj.ai/partners-and-integrations
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
